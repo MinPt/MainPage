@@ -1,0 +1,64 @@
+@import '../helpers/_helper-pack.scss';
+
+.header{
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin:0;
+  background-color: $main-color;
+  align-items: center;
+  transition: 1s ease;
+  &.hide{
+    top: -110px;
+  }
+}
+
+
+
+
+.logo{
+  border-radius: 50%;
+  max-width: 5rem;
+}
+
+.nav{
+  display: flex;
+  padding: 10px;
+  margin: 0;
+  width: 80%;
+  justify-content: flex-end;
+
+    &__item{
+
+      flex: 0 1 15%;
+      font-size: 130%;
+      color: $font-color;
+      text-decoration: none;
+      transition-duration: 1s;
+      text-align: center;
+
+      &::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: #fff;
+        transition: width .3s;
+      }
+
+      &:hover{
+        color: $help-color;
+        transform: scale(1.07);
+        &::after{
+          width: 100%;
+          transition: width .3s;
+          background-color: $content-background-color;
+        }
+      }
+    }
+}

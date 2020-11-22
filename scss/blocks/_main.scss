@@ -1,0 +1,15 @@
+@import '../helpers/_helper-pack.scss';
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title{
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+

@@ -4,48 +4,135 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="dist/css/main.min.css">
+  
   <title>Test</title>
 </head>
 <body>
+  <div class="wrapper">
+    <header id="page-header" class="header">
+      <img src="img/logo.jpg" alt="logo" class="logo">
   
-  <header class="header-wrapper">
-    <img src="img/logo.jpg" alt="logo" class="header-wrapper__logo">
-    <ul class="header-wrapper__nav">
-      <li class="header-wrapper__nav__item"><a href="#" class="header-wrapper__nav__item__ref">Home</a></li>
-      <li class="header-wrapper__nav__item"><a href="#" class="header-wrapper__nav__item__ref">Contact</a></li>
-      <li class="header-wrapper__nav__item"><a href="#" class="header-wrapper__nav__item__ref">About me</a></li>
-    </ul>
-  </header>
+      <div class="nav">
+        <a href="" class="nav__item">Home</a>
+        <a href="#about" class="nav__item">About me</a>
+        <a href="#skills" class="nav__item">My skills</a>
+        <a href="" class="nav__item">Contact</a>
+        
+      </div>
+      
+    </header>
+  
+    <main class="main">
+      
+      <div id="my-team" class="my-team-block content-wrapper">
+        <h1 class="title">My team</h1>
+        <div class="flex-wrapper">
+          <div class="wrapper overaly-container">
+            <img src="/img/person_2.jpg" alt="" class="photo">
+            <div class="overlay">
+              <div class="overlay__text">
+                <h1 class="title">This is Peter-guard-1</h1> <br/>
+                <p>This is one of the craziest creature on Earth. As you can see his eyes are wathcing inside of your miseriable soul.</p>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper overaly-container">
+            <img src="/img/person_1.jpg" alt="" class="photo">
+            <div class="overlay">
+              <div class="overlay__text">
+                <h1 class="title">This is Me</h1> <br/>
+                <p>My name is Peter and i'm 18 years old. I am studying at BSNU in Mykolayv at CS faculty.
+                  I want to become a front-end developer because i like to create responsive, beautiful and creative webpages.</p>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper overaly-container">
+            <img src="/img/person_3.jpg" alt="" class="photo">
+            <div class="overlay">
+              <div class="overlay__text">
+                <h1 class="title">This is Peter-guard-2</h1> <br/>
+                <p>This is one of the craziest creature on Earth. As you can see his eyes are wathcing inside of your miseriable soul.</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
 
-  <main class="main-wrapper">
-    
-    <div class="main-wrapper__skills-block">
-      <h1 class="main-wrapper__skills-block__title">My skills</h1>
-      <ul class="main-wrapper__skills-block__skills-list">
-        <li class="main-wrapper__skills-block__skills-list__skill-item">
-          <h2 class="main-wrapper__skills-block__skills-list__skill-item__skill-title">Languages</h2>
-          <ul class="main-wrapper__skills-block__skills-list__skill-item__skill-list">
-            <li class="main-wrapper__skills-block__skills-list__skill-item__skill-list__list-item">Russian</li> 
-            <li class="main-wrapper__skills-block__skills-list__skill-item__skill-list__list-item">Ukrainian</li> 
-            <li class="main-wrapper__skills-block__skills-list__skill-item__skill-list__list-item">English</li> 
-            
-          </ul> 
-        </li>
-        <li class="main-wrapper__skills-block__skills-list__skill-item">
-          <h2 class="main-wrapper__skills-block__skills-list__skill-item__skill-title">Front-end</h2>
-        </li>
-        <li class="main-wrapper__skills-block__skills-list__skill-item">
-          <h2 class="main-wrapper__skills-block__skills-list__skill-item__skill-title">Soft-skills</h2>
-        </li>
-      <ul/>
-    </div>
+      <div id="about" class="about-block content-wrapper">
+        <h1 class="title">About me</h1>
+        <div class="flex-wrapper">
+          <p>My name is Peter and i'm 18 years old. I am studying at BSNU in Mykolayv at CS faculty.
+            I want to become a front-end developer because i like to create responsive, beautiful and creative webpages.
+  
+          </p>
+        </div>
+        
+      </div>
+  
+      <div id="skills" class="skills-block content-wrapper">
+  
+        <h1 class="title">My skills</h1>
+  
+        <div class="flex-wrapper">
+          <div class="list">
+            <h1 class="title">Languages</h1>
+  
+            <div class="list__item">
+              <strong>Russian</strong>  
+              <strong>Native</strong>
+            </div>
+  
+            <div class="list__item">
+              <strong>Ukrainian</strong>
+              <strong>Native</strong>
+            </div>
+  
+            <div class="list__item">
+              <strong>English</strong>  
+              <strong>B2</strong>
+            </div>
+          </div>
+  
+          <div class="list">
+            <h1 class="title">Front-end</h1>
+  
+            <div class="list__item">
+              <strong>HTML</strong>
+            <strong>upper-intermediate</strong>
+          </div>
+            <div class="list__item">
+              <strong>CSS(SCSS)</strong>  
+              <strong>intermediate</strong>
+            </div>
+            <div class="list__item">
+              <strong>JS</strong>  
+              <strong>Excellent</strong>
+            </div>
+          </div>
+  
+          <div class="list">
+            <h1 class="title">Soft-skills</h1>
+            <div class="list__item"><strong>Speaking</strong>  <strong>Awesome</strong></div>
+            <div class="list__item"><strong>Stress tolerance</strong>  <strong>Above the average</strong></div>
+            <div class="list__item"><strong>Inventiveness</strong>  <strong>Good</strong></div>
+          </div>
+  
+        </div>
+        
+  
+      </div>
+  
+      
+  
+      
+    </main>
+  </div>
 
-    <div class="main-wrapper__home-block">
-      <h1 class="main-wrapper__home-block__title">Hello, my name is Peter and i am front-end developer</h1>
-      <p class="main-wrapper__home-block__information">Thank you for visiting my webpage. As i said, i'm front-end dev.I'm not that expirienced guy, but i'll become one. </p>
-    </div>
+  
+  
 
-    
-  </main>
 </body>
+<script src="scripts/_header-scroll.js"></script>
+<script src="scripts/main.js"></script>
 </html>
