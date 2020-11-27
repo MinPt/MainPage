@@ -8,9 +8,13 @@
   <title>Test</title>
 </head>
 <body>
-  <div class="wrapper d-flex center">
+  <div class="wrapper">
     <header id="page-header" class="header">
-      <img src="img/logo.jpg" alt="logo" class="logo">
+      <div class="logo wrapper">
+        <img src="img/logo.jpg" alt="logo" class="logo__image logo-unhover">
+        <img src="img/logo-hover.jpg" alt="logo" class="logo__image logo-hover">
+      </div>
+      
   
       <div class="nav">
         <a href="" class="nav__item">Home</a>
@@ -22,59 +26,24 @@
       
     </header>
   
-    <main class="main container ">
+    <main class="main">
       
-      <div id="my-team" class="my-team-block content-wrapper">
-        <h1 class="title">My team</h1>
-        <div class="flex-wrapper">
-          <div class="wrapper overaly-container">
-            <img src="img/person_2.jpg" alt="" class="photo">
-            <div class="overlay">
-              <div class="overlay__text">
-                <h1 class="title">This is Peter-guard-1</h1> <br/>
-                <p>This is one of the craziest creature on Earth. As you can see his eyes are wathcing inside of your miseriable soul.</p>
-              </div>
-            </div>
-          </div>
-          <div class="wrapper overaly-container">
-            <img id="petro-guard-1" src="img/person_1.jpg" alt="" class="photo">
-            <div class="overlay">
-              <div class="overlay__text">
-                <h1 class="title">This is Me</h1> <br/>
-                <p>My name is Peter and i'm 18 years old. I am studying at BSNU in Mykolayv at CS faculty.
-                  I want to become a front-end developer because i like to create responsive, beautiful and creative webpages.</p>
-              </div>
-            </div>
-          </div>
-          <div class="wrapper overaly-container">
-            <img src="img/person_3.jpg" alt="" class="photo">
-            <div class="overlay">
-              <div class="overlay__text">
-                <h1 class="title">This is Peter-guard-2</h1> <br/>
-                <p>This is one of the craziest creature on Earth. As you can see his eyes are wathcing inside of your miseriable soul.</p>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </div>
+     
 
       <div id="about" class="about-block content-wrapper">
         <h1 class="title">About me</h1>
         <div class="flex-wrapper">
-          <p>My name is Peter and i'm 18 years old. I am studying at BSNU in Mykolayv at CS faculty.
+          <p class="center">
+            My name is Peter and i'm 18 years old. I am studying at BSNU in Mykolayv at CS faculty.
             I want to become a front-end developer because i like to create responsive, beautiful and creative webpages.
-  
           </p>
         </div>
         
       </div>
   
-      <div id="skills" class="skills-block content-wrapper master1 test1">
-  
+      <div id="skills" class="skills-block content-wrapper">
         <h1 class="title">My skills</h1>
-  
-        <div class="flex-wrapper">
+        <div class="flex-wrapper wrap-wrap">
           <div class="list">
             <h1 class="title">Languages</h1>
   
@@ -119,11 +88,42 @@
           </div>
   
         </div>
-        
-  
       </div>
   
-      
+      <div id="my-team" class="my-team-block content-wrapper">
+        <h1 class="title">My team</h1>
+        <div class="flex-wrapper wrap-wrap">
+          <div class="wrapper overaly-container">
+            <img src="img/person_2.jpg" alt="" class="photo">
+            <div class="overlay">
+              <div class="overlay__text">
+                <h1 class="title">This is Peter-guard-1</h1> <br/>
+                <p>This is one of the craziest creature on Earth. As you can see his eyes are wathcing inside of your miseriable soul.</p>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper overaly-container">
+            <img id="petro-guard-1" src="img/person_1.jpg" alt="" class="photo">
+            <div class="overlay">
+              <div class="overlay__text">
+                <h1 class="title">This is Me</h1> <br/>
+                <p>My name is Peter and i'm 18 years old. I am studying at BSNU in Mykolayv at CS faculty.
+                  I want to become a front-end developer because i like to create responsive, beautiful and creative webpages.</p>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper overaly-container">
+            <img src="img/person_3.jpg" alt="" class="photo">
+            <div class="overlay">
+              <div class="overlay__text">
+                <h1 class="title">This is Peter-guard-2</h1> <br/>
+                <p>This is one of the craziest creature on Earth. As you can see his eyes are wathcing inside of your miseriable soul.</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
   
       
     </main>

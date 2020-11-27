@@ -21,21 +21,19 @@
 
 
 
-.logo{
-  border-radius: 50%;
-  max-width: 5rem;
-}
+
 
 .nav{
   display: flex;
+  max-width: 800px;
   padding: 10px;
   margin: 0;
   width: 80%;
-  justify-content: flex-end;
+  justify-content: space-between;
 
     &__item{
 
-      flex: 0 1 15%;
+      flex: 1 1 15%;
       font-size: 130%;
       color: $font-color;
       text-decoration: none;
