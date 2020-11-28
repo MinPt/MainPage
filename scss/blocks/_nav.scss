@@ -1,0 +1,94 @@
+@import '../helpers/_helper-pack.scss';
+
+.nav{
+  display: flex;
+  max-width: 800px;
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+  justify-content: space-between;
+  flex: 1 1 100%;
+  transition: 1s ease;
+  &__item{
+
+    flex: 1 1 15%;
+    font-size: 130%;
+    color: $font-color;
+    text-decoration: none;
+    transition-duration: 1s;
+    text-align: center;
+    transition: 1s ease;
+    &::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: #fff;
+        transition: width .3s;
+    }
+
+    &:hover{
+        color: $help-color;
+        transform: scale(1.07);
+        &::after{
+          width: 100%;
+          transition: width .3s;
+          background-color: $content-background-color;
+        }
+    }
+  }
+
+  
+  
+
+  @include tablet{
+    flex-direction: column;
+    margin-bottom: 1rem;
+    transition: 1s ease;
+    overflow: hidden;
+    height: 0px;
+    padding: 0;
+    margin: 0;
+    width: 25%;
+
+    &__item{
+      height: 0;
+      margin: 0;
+      overflow: hidden;
+    }
+    &.opened{
+      transition: 1s ease;
+      height: 100%;
+      display: flex;
+      .nav__item{
+        margin-bottom: 1rem;
+        height: auto;
+      }
+    }
+
+      
+  }
+
+  @include phone{
+    width: 100%;
+  }
+}
+
+
+
+.nav-toggler{
+  display: none;
+  margin: 1rem 2rem;
+  color: $font-color;
+  font-weight: bold;
+  font-size: 120%;
+  padding: 1rem;
+  flex: 0 0 0;
+  &:hover{
+    cursor: pointer;
+  }
+  @include tablet{
+    display: inline-block;
+
+  }
+}
