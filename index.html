@@ -8,7 +8,7 @@
   <title>Test</title>
 </head>
 <body>
-  <div class="wrapper">
+  <div class="wrapper pad-sides-5 align-between">
     <header id="page-header" class="header">
       <div class="logo wrapper">
         <img src="img/logo.jpg" alt="logo" class="logo__image logo-unhover">
@@ -33,7 +33,56 @@
   
     <main class="main">
       
-     
+      <div id="my-team" class="my-team-block content-wrapper">
+        <div class="carousel-wrapper ">
+          <h1 class="title">My team</h1>
+          <div class="carousel__item">
+            <div class="wrapper overaly-container">
+              <img src="img/person_2.jpg" alt="" class="photo">
+              <div class="overlay">
+                <div class="overlay__text">
+                  <h1 class="title">This is Peter-guard-1</h1> <br/>
+                  <p>This is one of the craziest creature on Earth. As you can see his eyes are wathcing inside of your miseriable soul.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <div class="wrapper">
+              <img id="petro-guard-1" src="img/person_1.jpg" alt="" class="photo">
+              <div class="wrapper overaly-container">
+              
+                <div class="overlay">
+                  <div class="overlay__text">
+                    <h1 class="title">This is Me</h1> <br/>
+                    <p>My name is Peter and i'm 18 years old. I am studying at BSNU in Mykolayv at CS faculty.
+                      I want to become a front-end developer because i like to create responsive, beautiful and creative webpages.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+          <div class="carousel__item">
+            <div class="wrapper overaly-container">
+              <img src="img/person_3.jpg" alt="" class="photo">
+              <div class="overlay">
+                <div class="overlay__text">
+                  <h1 class="title">This is Peter-guard-2</h1> <br/>
+                  <p>This is one of the craziest creature on Earth. As you can see his eyes are wathcing inside of your miseriable soul.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="dots-wrapper">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
 
       <div id="about" class="about-block content-wrapper">
         <h1 class="title">About me</h1>
@@ -94,51 +143,24 @@
   
         </div>
       </div>
-  
-      <div id="my-team" class="my-team-block content-wrapper">
-        <h1 class="title">My team</h1>
-        <div class="flex-wrapper wrap-wrap">
-          <div class="wrapper overaly-container">
-            <img src="img/person_2.jpg" alt="" class="photo">
-            <div class="overlay">
-              <div class="overlay__text">
-                <h1 class="title">This is Peter-guard-1</h1> <br/>
-                <p>This is one of the craziest creature on Earth. As you can see his eyes are wathcing inside of your miseriable soul.</p>
-              </div>
-            </div>
-          </div>
-          <div class="wrapper overaly-container">
-            <img id="petro-guard-1" src="img/person_1.jpg" alt="" class="photo">
-            <div class="overlay">
-              <div class="overlay__text">
-                <h1 class="title">This is Me</h1> <br/>
-                <p>My name is Peter and i'm 18 years old. I am studying at BSNU in Mykolayv at CS faculty.
-                  I want to become a front-end developer because i like to create responsive, beautiful and creative webpages.</p>
-              </div>
-            </div>
-          </div>
-          <div class="wrapper overaly-container">
-            <img src="img/person_3.jpg" alt="" class="photo">
-            <div class="overlay">
-              <div class="overlay__text">
-                <h1 class="title">This is Peter-guard-2</h1> <br/>
-                <p>This is one of the craziest creature on Earth. As you can see his eyes are wathcing inside of your miseriable soul.</p>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-  
-      
+
     </main>
+
+    <footer class="footer space-between">
+      <div class="wrapper">
+
+      </div>
+      <div class="wrapper">
+
+      </div>
+      <div class="wrapper">
+         created by Minailiuk Peter 2020&copy;
+      </div>
+    </footer>
   </div>
-
-  
-  
-
 </body>
 <script src="scripts/header-scroll.js"></script>
 <script src="scripts/main.js"></script>
 <script src="scripts/nav-toggler.js"></script>
+<script src="scripts/carousel.js"></script>
 </html>

@@ -4,13 +4,15 @@
 @import 'blocks/_overlay.scss';
 @import 'blocks/_logo.scss';
 @import 'blocks/_nav.scss';
+@import 'blocks/_carousel.scss';
+@import 'blocks/_footer.scss';
 *{
   box-sizing: border-box;
   font-family: "B612";
 }
 
 body{
-  padding: 0 5%;
+  padding: 0;
   margin: 0;
   background-color: $main-color;
 }

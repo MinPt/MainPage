@@ -32,12 +32,13 @@
   width: 15vw;
   border-radius: 20px;
   min-width: 200px;
+  
 }
   
 .wrapper{
   padding: 0;
   margin: 0;
-
+  position: relative;
 }
 
 .wrap-wrap{
@@ -68,4 +69,8 @@
   @include tablet{
     align-content: center;
   }
+}
+
+.align-between{
+  align-content: space-between;
 }
