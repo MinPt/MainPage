@@ -1,18 +1,27 @@
 @import '../helpers/_helper-pack.scss';
 
-.carousel-wrapper{
+.carousel-wrapper {
   position: relative;
 
-  .carousel__item{
+  .carousel__item {
     display: none;
-    animation-name: fade;
-    animation-duration: 1.5s;
-    &.active{
+    animation-name: fade-out;
+    animation-duration: .5s;
+    &.active {
       display: block;
+      animation-name: fade-in;
+      animation-duration: .5s;
+      &:hover {
+        ~.prev,
+        ~.next {
+          opacity: 100%;
+        }
+      }
     }
   }
 
-  .prev, .next{
+  .prev,
+  .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -24,13 +33,16 @@
     border-radius: 5px;
     background-color: none;
     padding: 10px;
-    &:hover{
-      background-color: rgba(0,0,0,0.8);
-
+    opacity: 0;
+    // transition: width .3s ease;
+    // overflow: hidden;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+      opacity: 100%;
     }
   }
 
-  .next{
+  .next {
     right: 0;
   }
 }
@@ -46,12 +58,12 @@
   transition: background-color 0.6s ease;
 }
 
-.active{
-  background-color: #717171;
+.active {
+  background-color: none;
   display: inline-block;
 }
 
-.dots-wrapper{
+.dots-wrapper {
   margin: 1rem;
   width: 100%;
   text-align: center;

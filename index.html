@@ -34,54 +34,33 @@
     <main class="main">
       
       <div id="my-team" class="my-team-block content-wrapper">
-        <div class="carousel-wrapper ">
-          <h1 class="title">My team</h1>
-          <div class="carousel__item">
-            <div class="wrapper overaly-container">
-              <img src="img/person_2.jpg" alt="" class="photo">
-              <div class="overlay">
-                <div class="overlay__text">
-                  <h1 class="title">This is Peter-guard-1</h1> <br/>
-                  <p>This is one of the craziest creature on Earth. As you can see his eyes are wathcing inside of your miseriable soul.</p>
-                </div>
+        <h1 class="title">My team</h1>
+        <div class="wrapper d-flex">
+          <div class="wrapper relative">
+            <div class="carousel-wrapper ">
+              <div class="carousel__item relative">
+                <img src="img/person_1.jpg" class="photo relative" alt="">
               </div>
+              <div class="carousel__item relative">
+                <img src="img/person_2.jpg" class="photo relative" alt="">
+              </div>
+              <div class="carousel__item relative">
+                <img src="img/person_3.jpg" class="photo relative" alt="">
+              </div>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="dots-wrapper">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
             </div>
           </div>
-          <div class="carousel__item">
-            <div class="wrapper">
-              <img id="petro-guard-1" src="img/person_1.jpg" alt="" class="photo">
-              <div class="wrapper overaly-container">
-              
-                <div class="overlay">
-                  <div class="overlay__text">
-                    <h1 class="title">This is Me</h1> <br/>
-                    <p>My name is Peter and i'm 18 years old. I am studying at BSNU in Mykolayv at CS faculty.
-                      I want to become a front-end developer because i like to create responsive, beautiful and creative webpages.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-           
+          <div class="wrapper center">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At modi deserunt laborum nobis ab, in vero facere maiores dolor sunt ea, eum illo cupiditate aliquid, saepe commodi ipsum esse omnis? Laudantium cum dignissimos quam, ad, nulla accusamus amet ratione doloribus unde minima architecto laboriosam molestiae ex ut magnam, similique consectetur?</p>
           </div>
-          <div class="carousel__item">
-            <div class="wrapper overaly-container">
-              <img src="img/person_3.jpg" alt="" class="photo">
-              <div class="overlay">
-                <div class="overlay__text">
-                  <h1 class="title">This is Peter-guard-2</h1> <br/>
-                  <p>This is one of the craziest creature on Earth. As you can see his eyes are wathcing inside of your miseriable soul.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <div class="dots-wrapper">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
+
       </div>
 
       <div id="about" class="about-block content-wrapper">

@@ -1,8 +1,21 @@
-@keyframes fade{
+@keyframes fade-in{
   from {
+    left: -200px;
     opacity: .4;
   }
   to {
+    left: 0;
     opacity: 1;
+  }
+}
+
+@keyframes fade-out{
+  from {
+    right: 0px;
+    opacity: 1;
+  }
+  to {
+    right: 200;
+    opacity: .4;
   }
 }
