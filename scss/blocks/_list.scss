@@ -1,12 +1,11 @@
 @import '../helpers/helper-pack';
 
 .list{
-  display: flex;
+
   flex-direction: column;
   justify-content: space-between;
   padding: 10px;
-  flex: 0 0 35%;
-  min-width: 350px;
+
   &__item{
     display: flex;
     justify-content: space-between;
@@ -14,6 +13,9 @@
     border-radius: 5px;
     padding: 10px;
     margin-top: 1rem;
+    strong:last-of-type{
+      margin-left: 3rem;
+    }
   }
   
 }

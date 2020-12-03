@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="dist/css/main.min.css">
-  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <title>Test</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
       
       <div class="wrapper tablet-center w-80 space-between d-flex column flex-end">
         <div id="navbar-toggler" class="nav-toggler">
-          Menu
+          <i class="material-icons menu">menu</i>
         </div>
         <div id="navbar" class="nav">
           <a href="" class="nav__item">Home</a>
@@ -33,32 +34,24 @@
   
     <main class="main">
       
-      <div id="my-team" class="my-team-block content-wrapper">
-        <h1 class="title">My team</h1>
-        <div class="wrapper d-flex">
-          <div class="wrapper relative">
-            <div class="carousel-wrapper ">
-              <div class="carousel__item relative">
-                <img src="img/person_1.jpg" class="photo relative" alt="">
-              </div>
-              <div class="carousel__item relative">
-                <img src="img/person_2.jpg" class="photo relative" alt="">
-              </div>
-              <div class="carousel__item relative">
-                <img src="img/person_3.jpg" class="photo relative" alt="">
-              </div>
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <div class="dots-wrapper">
-              <span class="dot" onclick="currentSlide(1)"></span>
-              <span class="dot" onclick="currentSlide(2)"></span>
-              <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
+      <div id="projects" class="projects-block content-wrapper">
+        <div class="wrapper d-flex wrap-wrap center">
+          <div class="card col-4">
+            <h1 class="title">1st project</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet asperiores perspiciatis temporibus dolorem quos iste commodi ab dignissimos, facilis alias sunt voluptas similique voluptatem non.</p>
+            <button class="btn">Read more</button>
           </div>
-          <div class="wrapper center">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At modi deserunt laborum nobis ab, in vero facere maiores dolor sunt ea, eum illo cupiditate aliquid, saepe commodi ipsum esse omnis? Laudantium cum dignissimos quam, ad, nulla accusamus amet ratione doloribus unde minima architecto laboriosam molestiae ex ut magnam, similique consectetur?</p>
+          <div class="card col-4">
+            <h1 class="title">1st project</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, rerum veritatis enim, odio expedita atque temporibus vero molestias beatae voluptatem consequuntur in sunt voluptates ullam repellat aspernatur consequatur? Iure vitae a rerum, quo culpa veritatis.</p>
+            <button class="btn">Read more</button>
           </div>
+          <div class="card col-4">
+            <h1 class="title">1st project</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat architecto officia perspiciatis. Quae eaque magni ipsum neque molestiae consequuntur. Delectus eius ut eos blanditiis expedita quod. Delectus aperiam aliquid tempora corrupti sequi quaerat!</p>
+            <button class="btn">Read more</button>
+          </div>
+
         </div>
 
       </div>

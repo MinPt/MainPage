@@ -1,23 +1,14 @@
 @import '../helpers/_helper-pack.scss';
+$number-of-slides: 3;
 
 .carousel-wrapper {
   position: relative;
+  overflow: hidden;
+  
+  .carousel__inner{
 
-  .carousel__item {
-    display: none;
-    animation-name: fade-out;
-    animation-duration: .5s;
-    &.active {
-      display: block;
-      animation-name: fade-in;
-      animation-duration: .5s;
-      &:hover {
-        ~.prev,
-        ~.next {
-          opacity: 100%;
-        }
-      }
-    }
+    display: flex;
+    
   }
 
   .prev,
