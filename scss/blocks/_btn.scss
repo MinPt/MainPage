@@ -1,0 +1,19 @@
+@import "../helpers/_helper-pack.scss";
+
+.btn{
+  border: 1px solid $font-color;
+  background-color: $content-background-color;
+  width: fit-content;
+  padding: 10px;
+  color:$font-color;
+  font-size: 1.3rem;
+  box-shadow: 0px 1px 10px 1px $main-color;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform .3s;
+  display: flex;
+
+  &:hover{
+    transform: scale(1.05);
+  }
+}

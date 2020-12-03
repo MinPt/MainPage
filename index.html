@@ -6,6 +6,10 @@
   <link rel="stylesheet" href="dist/css/main.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIF4SA4YjtG16YiH9CJG_W-KyLTC8fvpU&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
   <title>Test</title>
 </head>
 <body>
@@ -36,20 +40,20 @@
       
       <div id="projects" class="projects-block content-wrapper">
         <div class="wrapper d-flex wrap-wrap center">
-          <div class="card col-4">
+          <div class="card col-4 col-12-phone">
             <h1 class="title">1st project</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet asperiores perspiciatis temporibus dolorem quos iste commodi ab dignissimos, facilis alias sunt voluptas similique voluptatem non.</p>
-            <button class="btn">Read more</button>
+            <button class="btn"><span class="material-icons">import_contacts</span> Read more</button>
           </div>
-          <div class="card col-4">
+          <div class="card col-4 col-12-phone">
             <h1 class="title">1st project</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, rerum veritatis enim, odio expedita atque temporibus vero molestias beatae voluptatem consequuntur in sunt voluptates ullam repellat aspernatur consequatur? Iure vitae a rerum, quo culpa veritatis.</p>
-            <button class="btn">Read more</button>
+            <button class="btn"><span class="material-icons">import_contacts</span>Read more</button>
           </div>
-          <div class="card col-4">
+          <div class="card col-4 col-12-phone">
             <h1 class="title">1st project</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat architecto officia perspiciatis. Quae eaque magni ipsum neque molestiae consequuntur. Delectus eius ut eos blanditiis expedita quod. Delectus aperiam aliquid tempora corrupti sequi quaerat!</p>
-            <button class="btn">Read more</button>
+            <button class="btn"><span class="material-icons">import_contacts</span>Read more</button>
           </div>
 
         </div>
@@ -70,7 +74,8 @@
       <div id="skills" class="skills-block content-wrapper">
         <h1 class="title">My skills</h1>
         <div class="flex-wrapper wrap-wrap">
-          <div class="list">
+          <div class="list col-4 col-12-phone center">
+            <span class="material-icons">g_translate</span>
             <h1 class="title">Languages</h1>
   
             <div class="list__item">
@@ -89,7 +94,8 @@
             </div>
           </div>
   
-          <div class="list">
+          <div class="list col-4 col-12-phone center">
+            <span class="material-icons">public</span>
             <h1 class="title">Front-end</h1>
   
             <div class="list__item">
@@ -106,14 +112,21 @@
             </div>
           </div>
   
-          <div class="list">
-            <h1 class="title">Soft-skills</h1>
+          <div class="list col-4 col-12-phone center">
+            <span class="material-icons">record_voice_over</span>
+            <h1 class="title">
+              Soft-skills
+            </h1>
             <div class="list__item"><strong>Speaking</strong>  <strong>Awesome</strong></div>
             <div class="list__item"><strong>Stress tolerance</strong>  <strong>Above the average</strong></div>
             <div class="list__item"><strong>Inventiveness</strong>  <strong>Good</strong></div>
           </div>
   
         </div>
+      </div>
+
+      <div class="contact-block content-wrapper">
+        <div id="map"></div>
       </div>
 
     </main>
@@ -135,4 +148,5 @@
 <script src="scripts/main.js"></script>
 <script src="scripts/nav-toggler.js"></script>
 <script src="scripts/carousel.js"></script>
+<script src="scripts/map.js"></script>
 </html>
