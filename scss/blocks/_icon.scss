@@ -1,0 +1,12 @@
+@import "../helpers/_variables.scss";
+
+.icon{
+  width: 2rem;
+  height: 2rem;
+  margin: auto 1rem;
+  &:hover{
+    color: $font-color-light;
+    cursor: pointer;
+  }
+}
+
