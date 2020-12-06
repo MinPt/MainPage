@@ -24,6 +24,9 @@
   button{
     animation: 1.5s linear infinite alternate;
     animation-name: btnAnim;
+    &:last-child{
+      margin-left: 2rem;
+    }
   }
 }
 

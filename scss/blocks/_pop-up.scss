@@ -1,0 +1,14 @@
+#pop-up{
+  visibility: hidden;
+  &:checked ~ #contact-block{
+    display: flex;
+  }
+}
+
+.pop-up__label{
+  margin-left: 4rem;
+  cursor: pointer;
+  border: 1px solid $font-color;
+  padding: 1rem;
+}
+
