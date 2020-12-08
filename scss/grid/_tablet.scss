@@ -1,0 +1,21 @@
+@media (max-width: 976px){
+  .col-3-tablet{
+    flex: 1 0 23%;
+    margin: 0 1%;
+  }
+  
+  .col-4-tablet{
+    flex: 1 0 32%;
+    margin: 0 1%;
+  }
+  
+  .col-6-tablet{
+    flex: 1 0 48%;
+    margin: 0 1%;
+  }
+  
+  .col-12-tablet{
+    flex: 1 0 100%;
+    margin: 0;
+  }
+}
