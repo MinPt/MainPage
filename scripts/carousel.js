@@ -8,25 +8,27 @@ function plusSlides(n){
 function currentSlide(n){
   showSlides(slideIndex = n);
 }
+let dots = document.getElementsByClassName("dot");
 
+  for(let i = 0;i < dots.length; i++){
+    for(let j = 0; j < dots[i].attributes.length; j++){
+      if(dots[i].attributes[j].name == "checked"){
+        console.log(i);
+        dots[i + 1].attributes+= "checked : '' "
+      }
+    }
+  }
+
+  for(let i = 0;i < dots.length; i++){
+    for(let j = 0; j < dots[i].attributes.length; j++){
+      if(dots[i].attributes[j].name == "checked"){
+        console.log("TRUE");
+      }
+    }
+  }
 
 function showSlides(n){
-  let slides = document.getElementsByClassName("carousel__item");
-  let dots = document.getElementsByClassName("dot");
-
-  if(n > slides.length){
-    slideIndex = 1;
-  }else if(n < 1)
-  {
-    slideIndex = slides.length;
-  }
-  for(let i = 0; i < slides.length;i++){
-    slides[i].classList.remove("active");
-  }
-  for(let i = 0; i < dots.length;i++){
-    dots[i].classList.remove("active");
-  }
-  console.log(slideIndex);
-  slides[slideIndex-1].classList.add("active");
-  dots[slideIndex-1].classList.add("active");
+  
+  
+ 
 }

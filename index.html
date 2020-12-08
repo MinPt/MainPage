@@ -40,6 +40,26 @@
   
     <main class="main">
       
+      <div class="content-wrapper">
+        <div class="carousel center">
+          <input type="radio" name="nav" id="dot-1" class="dot" checked>
+          <input type="radio" name="nav" id="dot-2" class="dot">
+          <input type="radio" name="nav" id="dot-3" class="dot">
+          
+          <div class="carousel__inner">
+            <img src="img/person_1.jpg" alt="" class="photo">
+            <img src="img/person_2.jpg" alt="" class="photo">
+            <img src="img/person_3.jpg" alt="" class="photo">
+            
+          </div>
+          <label for="dot-1">dot 1</label>
+          <label for="dot-2">dot 2</label>
+          <label for="dot-3">dot 3</label>
+          <span class="carousel__nav prev">&larrhk;</span>
+          <span class="carousel__nav next">&rarrhk;</span>
+        </div>
+      </div>
+
       <div id="projects" class="projects-block content-wrapper">
         <div class="wrapper d-flex wrap-wrap center">
           <div class="card col-4 col-12-phone">
@@ -128,7 +148,8 @@
       </div>
 
 
-      <div class="content-wrapper">
+      <div class="content-wrapper relative">
+        <h1 class="title">My Univercity</h1>
         <div id="map"></div>
       </div>
 
