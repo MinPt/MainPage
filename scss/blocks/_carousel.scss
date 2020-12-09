@@ -44,9 +44,6 @@ $count-of-slides: 3;
     visibility: hidden;
   }
 
-  .dot:nth-child(1):checked ~.carousel__inner{
-    left: 0 * -200px;
-  }
 
   @for $i from 1 through $count-of-slides{
     .dot:nth-child(#{$i}):checked ~.carousel__inner{
@@ -54,6 +51,14 @@ $count-of-slides: 3;
     }
   }
   
+  label{
+    margin-right: 1rem;
+    padding: 0.5rem;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
 }
 
 

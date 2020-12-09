@@ -45,7 +45,6 @@ a{
 .photo{
   display: inline-block;
   width: 15vw;
-  border-radius: 20px;
   min-width: 200px;
 
 }
@@ -116,3 +115,11 @@ a{
   justify-content: center;
 }
 
+.m-2{
+  margin: 2rem;
+}
+
+.align-center{
+  align-content: center;
+  align-items: center;
+}

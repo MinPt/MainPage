@@ -40,28 +40,37 @@
   
     <main class="main">
       
-      <div class="content-wrapper">
-        <div class="carousel center">
-          <input type="radio" name="nav" id="dot-1" class="dot" checked>
-          <input type="radio" name="nav" id="dot-2" class="dot">
-          <input type="radio" name="nav" id="dot-3" class="dot">
-          
-          <div class="carousel__inner">
-            <img src="img/person_1.jpg" alt="" class="photo">
-            <img src="img/person_2.jpg" alt="" class="photo">
-            <img src="img/person_3.jpg" alt="" class="photo">
-            
+        <div class="content-wrapper">
+          <h1 class="title">Hello, my name is Peter</h1>
+          <div class="wrapper d-flex center wrap-wrap">
+            <div class="wrapper col-6 d-flex center col-12-phone">
+              <div class="carousel center">
+                <input type="radio" name="nav" id="dot-1" class="dot" checked>
+                <input type="radio" name="nav" id="dot-2" class="dot">
+                <input type="radio" name="nav" id="dot-3" class="dot">
+                
+                <div class="carousel__inner">
+                  <img src="img/person_1.jpg" alt="" class="photo">
+                  <img src="img/person_2.jpg" alt="" class="photo">
+                  <img src="img/person_3.jpg" alt="" class="photo">
+                  
+                </div>
+                <label for="dot-1">1</label>
+                <label for="dot-2">2</label>
+                <label for="dot-3">3</label>
+            </div>
           </div>
-          <label for="dot-1">dot 1</label>
-          <label for="dot-2">dot 2</label>
-          <label for="dot-3">dot 3</label>
-          <span class="carousel__nav prev">&larrhk;</span>
-          <span class="carousel__nav next">&rarrhk;</span>
-        </div>
+          <div class="wrapper m-2 d-flex align-center col-6 col-12-phone">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis placeat ad laboriosam porro? Id <strong>quae</strong> ratione molestiae nobis officiis incidunt, eligendi dolor ad error in. Consequatur est velit blanditiis, unde ipsam dolorum harum quaerat recusandae, cum sit incidunt, magnam error!</p>
+          </div>
+          </div>
+          
       </div>
 
       <div id="projects" class="projects-block content-wrapper">
+        <h1 class="title">My projects</h1>
         <div class="wrapper d-flex wrap-wrap center">
+          
           <div class="card col-4 col-12-phone">
             <h1 class="title">1st project</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet asperiores perspiciatis temporibus dolorem quos iste commodi ab dignissimos, facilis alias sunt voluptas similique voluptatem non.</p>
@@ -188,7 +197,6 @@
 <script src="scripts/header-scroll.js"></script>
 <script src="scripts/main.js"></script>
 <script src="scripts/nav-toggler.js"></script>
-<script src="scripts/carousel.js"></script>
 <script src="scripts/map.js"></script>
 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
