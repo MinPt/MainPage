@@ -6,6 +6,7 @@
   align-items: center;
   flex-direction: column;
   background-color: $content-background-color;
+  min-width: 320px;
   &__input{
     background-color: white;
     border: none;
