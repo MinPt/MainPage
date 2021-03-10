@@ -1,125 +1,128 @@
 @import "_mixins.scss";
 
-a{
+a {
   color: $font-color;
 }
 
-.flex-wrapper{
+.flex-wrapper {
   margin: 0;
   display: flex;
   justify-content: space-evenly;
   padding: 3rem 0;
 }
 
-.center{
+.center {
   justify-content: center;
   text-align: center;
 }
 
-.space-evenly{
+.space-evenly {
   justify-content: space-evenly;
 }
 
-.content-wrapper{
+.content-wrapper {
   background-color: $content-background-color;
-  @media (prefer-color-scheme: dark){
+  @media (prefer-color-scheme: dark) {
     background-color: #fff;
   }
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  margin: 20rem 0;
+  margin: 20rem 15%;
   color: $font-color;
   padding: 5px 25px;
-  box-shadow: 0px 11px 19px 7px rgba(0,0,0,0.84);
-  @include phone{
-    div{
+  box-shadow: 0px 11px 19px 7px rgba(0, 0, 0, 0.84);
+
+  @include phone {
+    div {
       margin-top: 2rem;
-      &:last-child{
+      &:last-child {
         margin-bottom: 2rem;
       }
     }
   }
 }
-  
-.photo{
+
+.photo {
   display: inline-block;
   width: 15vw;
   min-width: 200px;
-
 }
-  
-.wrapper{
+
+.wrapper {
   padding: 0;
   margin: 0;
   position: relative;
 }
 
-.wrap-wrap{
+.wrap-wrap {
   flex-wrap: wrap;
 }
 
-.d-flex{
+.d-flex {
   display: flex;
 }
 
-.column{
+.column {
   flex-direction: column;
 }
 
-.w-80{
+.w-80 {
   width: 80%;
 }
 
-.space-between{
+.space-between {
   align-content: space-between;
 }
 
-.flex-end{
+.flex-end {
   align-items: flex-end;
 }
 
-.tablet-center{
-  @include tablet{
+.tablet-center {
+  @include tablet {
     align-content: center;
   }
 }
 
-.align-between{
+.align-between {
   align-content: space-between;
 }
-.relative{
+.relative {
   position: relative;
 }
 
-.menu{
-  transition-duration: .3s;
-  &:hover{
+.menu {
+  transition-duration: 0.3s;
+  &:hover {
     transform: scale(1.2);
     color: white;
   }
 }
 
-.small-title{
+.small-title {
   font-size: 1.5rem;
   text-decoration: underline;
-  
 }
 
-.border-light{
+.border-light {
   border: 1px solid $font-color;
   border-radius: 10px;
 }
 
-.justify-center{
+.justify-center {
   justify-content: center;
 }
 
-.m-2{
+.m-2 {
   margin: 2rem;
 }
 
-.align-center{
+.align-center {
   align-content: center;
   align-items: center;
+}
+
+.container {
+  max-width: 1200px;
 }

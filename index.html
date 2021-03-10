@@ -1,203 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="dist/css/main.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-      <script
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIF4SA4YjtG16YiH9CJG_W-KyLTC8fvpU&callback=initMap&libraries=&v=weekly"
       defer
     ></script>
-  <title>Test</title>
-</head>
-<body>
-  <div class="wrapper pad-sides-5 align-between">
-    <header id="page-header" class="header">
-      <div class="logo wrapper">
-        <img src="img/logo.jpg" alt="logo" class="logo__image logo-unhover">
-        <img src="img/logo-hover.jpg" alt="logo" class="logo__image logo-hover">
-      </div>
-      
-      <div class="wrapper tablet-center w-80 space-between d-flex column flex-end">
-        <div id="navbar-toggler" class="nav-toggler">
-          <i class="material-icons menu">menu</i>
-        </div>
-        <div id="navbar" class="nav">
-          <a href="" class="nav__item">Home</a>
-          <a href="#about" class="nav__item">About me</a>
-          <a href="#skills" class="nav__item">My skills</a>
-          <a href="" class="nav__item">Contact</a>
-          
-        </div>
-      </div>
-      
-      
-    </header>
-  
-    <main class="main">
-      
-        <div class="content-wrapper">
-          <h1 class="title">Hello, my name is Peter</h1>
-          <div class="wrapper d-flex center wrap-wrap">
-            <div class="wrapper col-6 d-flex center col-12-phone">
-              <div class="carousel center">
-                <input type="radio" name="nav" id="dot-1" class="dot" checked>
-                <input type="radio" name="nav" id="dot-2" class="dot">
-                <input type="radio" name="nav" id="dot-3" class="dot">
-                
-                <div class="carousel__inner">
-                  <img src="img/person_1.jpg" alt="" class="photo">
-                  <img src="img/person_2.jpg" alt="" class="photo">
-                  <img src="img/person_3.jpg" alt="" class="photo">
-                  
-                </div>
-                <label for="dot-1">1</label>
-                <label for="dot-2">2</label>
-                <label for="dot-3">3</label>
-            </div>
-          </div>
-          <div class="wrapper m-2 d-flex align-center col-6 col-12-phone">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis placeat ad laboriosam porro? Id <strong>quae</strong> ratione molestiae nobis officiis incidunt, eligendi dolor ad error in. Consequatur est velit blanditiis, unde ipsam dolorum harum quaerat recusandae, cum sit incidunt, magnam error!</p>
-          </div>
-          </div>
-          
-      </div>
-
-      <div id="projects" class="projects-block content-wrapper">
-        <h1 class="title">My projects</h1>
-        <div class="wrapper d-flex wrap-wrap center">
-          
-          <div class="card col-4 col-12-phone">
-            <h1 class="title">1st project</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet asperiores perspiciatis temporibus dolorem quos iste commodi ab dignissimos, facilis alias sunt voluptas similique voluptatem non.</p>
-            <button class="btn"><span class="material-icons">import_contacts</span> Read more</button>
-          </div>
-          <div class="card col-4 col-12-phone">
-            <h1 class="title">1st project</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, rerum veritatis enim, odio expedita atque temporibus vero molestias beatae voluptatem consequuntur in sunt voluptates ullam repellat aspernatur consequatur? Iure vitae a rerum, quo culpa veritatis.</p>
-            <button class="btn"><span class="material-icons">import_contacts</span>Read more</button>
-          </div>
-          <div class="card col-4 col-12-phone">
-            <h1 class="title">1st project</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat architecto officia perspiciatis. Quae eaque magni ipsum neque molestiae consequuntur. Delectus eius ut eos blanditiis expedita quod. Delectus aperiam aliquid tempora corrupti sequi quaerat!</p>
-            <button class="btn"><span class="material-icons">import_contacts</span>Read more</button>
-          </div>
-
+    <title>Test</title>
+  </head>
+  <body>
+    <div class="wrapper pad-sides-5 align-between">
+      <header id="page-header" class="header">
+        <div class="logo wrapper">
+          <img src="img/logo.jpg" alt="logo" class="logo__image logo-unhover" />
+          <img
+            src="img/logo-hover.jpg"
+            alt="logo"
+            class="logo__image logo-hover"
+          />
         </div>
 
-      </div>
-
-      <div id="about" class="about-block content-wrapper">
-        <h1 class="title">About me</h1>
-        <div class="flex-wrapper">
-          <p class="center">
-            My name is Peter and i'm 18 years old. I am studying at BSNU in Mykolayv at CS faculty.
-            I want to become a front-end developer because i like to create responsive, beautiful and creative webpages.
-          </p>
-        </div>
-        
-      </div>
-  
-      <div id="skills" class="skills-block content-wrapper">
-        <h1 class="title">My skills</h1>
-        <div class="flex-wrapper wrap-wrap">
-          <div class="list col-4 col-12-phone center">
-            <span class="material-icons">g_translate</span>
-            <h1 class="title">Languages</h1>
-  
-            <div class="list__item">
-              <strong>Russian</strong>  
-              <strong>Native</strong>
-            </div>
-  
-            <div class="list__item">
-              <strong>Ukrainian</strong>
-              <strong>Native</strong>
-            </div>
-  
-            <div class="list__item">
-              <strong>English</strong>  
-              <strong>B2</strong>
-            </div>
+        <div
+          class="wrapper tablet-center w-80 space-between d-flex column flex-end"
+        >
+          <div id="navbar-toggler" class="nav-toggler">
+            <i class="material-icons menu">menu</i>
           </div>
-  
-          <div class="list col-4 col-12-phone center">
-            <span class="material-icons">public</span>
-            <h1 class="title">Front-end</h1>
-  
-            <div class="list__item">
-              <strong>HTML</strong>
-            <strong>upper-intermediate</strong>
-          </div>
-            <div class="list__item">
-              <strong>CSS(SCSS)</strong>  
-              <strong>intermediate</strong>
-            </div>
-            <div class="list__item">
-              <strong>JS</strong>  
-              <strong>Excellent</strong>
-            </div>
-          </div>
-  
-          <div class="list col-4 col-12-phone center">
-            <span class="material-icons">record_voice_over</span>
-            <h1 class="title">
-              Soft-skills
-            </h1>
-            <div class="list__item"><strong>Speaking</strong>  <strong>Awesome</strong></div>
-            <div class="list__item"><strong>Stress tolerance</strong>  <strong>Above the average</strong></div>
-            <div class="list__item"><strong>Inventiveness</strong>  <strong>Good</strong></div>
-          </div>
-  
-        </div>
-      </div>
-
-
-      <div class="content-wrapper relative">
-        <h1 class="title">My Univercity</h1>
-        <div id="map"></div>
-      </div>
-
-    </main>
-
-    <footer class="footer space-between center">
-      <div class="wrapper ">
-        <h1 class="small-title">Contact me</h1>
-        <a target="_blank" href="https://www.instagram.com/petroykrainec/"><span class="iconify icon" data-icon="ant-design:instagram-outlined" data-inline="false"></span></a>
-        <a target="_blank" href="https://t.me/MinPt"><span class="iconify icon" data-icon="la:telegram" data-inline="false"></span></a>
-        <a target="_blank" href="https://github.com/MinPt"><span class="iconify icon" data-icon="bytesize:github" data-inline="false"></span></a>
-        <label for="pop-up"><span class="iconify icon" data-icon="ant-design:mail-outlined" data-inline="false"></span></label> 
-        <input type="checkbox" id="pop-up">
-        <div id="contact-block" class="contact">
-          <div id="pop-up-form" class="form">
-            <label for="form__e-mail" class="form__label">Enter your e-mail</label>
-            <input id="form__e-mail" type="email" class="form__input">
-            <label for="form__name" class="form__label">Your Name</label>
-            <input id="form__name" type="password" class="form__input">
-            <label for="form_message" class="form__label">Your massage</label>
-            <input id="form_message" type="text" class="form__input">
-            <div class="wrapper d-flex">
-              <button class="btn">Send e-mail</button>
-              <button class="btn"><label for="pop-up">close</label></button> 
-            </div>
-            
-
+          <div id="navbar" class="nav">
+            <a href="" class="nav__item">Home</a>
+            <a href="#about" class="nav__item">About me</a>
+            <a href="#skills" class="nav__item">My skills</a>
+            <a href="#contact" class="nav__item">Contact</a>
           </div>
         </div>
-      </div>
-    </footer>
+      </header>
 
-    
-  </div>
-</body>
-<script src="scripts/header-scroll.js"></script>
-<script src="scripts/main.js"></script>
-<script src="scripts/nav-toggler.js"></script>
-<script src="scripts/map.js"></script>
-<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+      <main class="main">
+        <div id="about" class="about-block content-wrapper">
+          <h1 class="title">About me</h1>
+          <div class="flex-wrapper">
+            <p class="center">
+              My name is Peter and i'm 18 years old. I am studying at BSNU in
+              Mykolayv at CS faculty. I want to become a front-end developer
+              because i like to create responsive, beautiful and creative
+              webpages.
+            </p>
+            <p>
+              I'm 19 y.o BSNU student. Interested in exloring programming world
+              in defferent ways. At the moment trying to figure out what is
+              <strong>ReactJS</strong> really is and how to use it properly.
+            </p>
+          </div>
+        </div>
 
+        <div id="projects" class="projects-block content-wrapper">
+          <h2 class="title">My projects</h2>
+          <div class="wrapper d-flex wrap-wrap center">
+            <div class="card col-4 col-12-phone">
+              <h2 class="title">CV Website</h2>
+
+              <p>
+                First one is this website. It was created with intention to show
+                what i can do. While working on this i learned basics of
+                resposive UI design, as you can see my designer skills not so
+                good, wish i'll work with internal front-end logic =)
+              </p>
+            </div>
+            <div class="card col-4 col-12-phone">
+              <h2 class="title">YAFF forum</h2>
+              <p>
+                Project i'm currently working on is YAFF forum. This is default
+                forum, that will provide users opportunity to create posts,
+                comments, chats. I'm working on front-end part (with ReactJS and
+                react libraries), my classmate is working on backend and
+                database.
+              </p>
+              <a href="https://github.com/MinPt/YAFF-front" class="btn"
+                ><span class="material-icons">import_contacts</span>See github
+                project</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div id="skills" class="skills-block content-wrapper">
+          <h1 class="title">My skills</h1>
+          <div class="flex-wrapper wrap-wrap">
+            <div class="list col-4 col-12-phone center">
+              <span class="material-icons">g_translate</span>
+              <h1 class="title">Languages</h1>
+
+              <div class="list__item">
+                <strong>Russian</strong>
+                <strong>Native</strong>
+              </div>
+
+              <div class="list__item">
+                <strong>Ukrainian</strong>
+                <strong>Native</strong>
+              </div>
+
+              <div class="list__item">
+                <strong>English</strong>
+                <strong>B2</strong>
+              </div>
+            </div>
+
+            <div class="list col-4 col-12-phone center">
+              <span class="material-icons">public</span>
+              <h1 class="title">Front-end</h1>
+
+              <div class="list__item">
+                <strong>HTML</strong>
+                <strong>upper-intermediate</strong>
+              </div>
+              <div class="list__item">
+                <strong>CSS(SCSS)</strong>
+                <strong>intermediate</strong>
+              </div>
+              <div class="list__item">
+                <strong>JS</strong>
+                <strong>Regular</strong>
+              </div>
+            </div>
+
+            <div class="list col-4 col-12-phone center">
+              <span class="material-icons">record_voice_over</span>
+              <h1 class="title">Soft-skills</h1>
+              <div class="list__item">
+                <strong>Speaking</strong> <strong>Awesome</strong>
+              </div>
+              <div class="list__item">
+                <strong>Stress tolerance</strong>
+                <strong>Above the average</strong>
+              </div>
+              <div class="list__item">
+                <strong>Inventiveness</strong> <strong>Good</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-wrapper relative">
+          <h1 class="title">My Univercity</h1>
+          <div id="map"></div>
+        </div>
+      </main>
+
+      <footer class="footer space-between center">
+        <div id="contact" class="wrapper">
+          <h1 class="small-title">Contact me</h1>
+          <a target="_blank" href="https://www.instagram.com/petroykrainec/"
+            ><span
+              class="iconify icon"
+              data-icon="ant-design:instagram-outlined"
+              data-inline="false"
+            ></span
+          ></a>
+          <a target="_blank" href="https://t.me/MinPt"
+            ><span
+              class="iconify icon"
+              data-icon="la:telegram"
+              data-inline="false"
+            ></span
+          ></a>
+          <a target="_blank" href="https://github.com/MinPt"
+            ><span
+              class="iconify icon"
+              data-icon="bytesize:github"
+              data-inline="false"
+            ></span
+          ></a>
+          <label for="pop-up"
+            ><span
+              class="iconify icon"
+              data-icon="ant-design:mail-outlined"
+              data-inline="false"
+            ></span
+          ></label>
+          <input type="checkbox" id="pop-up" />
+          <div id="contact-block" class="contact">
+            <div id="pop-up-form" class="form">
+              <label for="form__e-mail" class="form__label"
+                >Enter your e-mail</label
+              >
+              <input id="form__e-mail" type="email" class="form__input" />
+              <label for="form__name" class="form__label">Your Name</label>
+              <input id="form__name" type="password" class="form__input" />
+              <label for="form_message" class="form__label">Your massage</label>
+              <input id="form_message" type="text" class="form__input" />
+              <div class="wrapper d-flex">
+                <button class="btn">Send e-mail</button>
+                <button class="btn"><label for="pop-up">close</label></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="scripts/header-scroll.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/nav-toggler.js"></script>
+  <script src="scripts/map.js"></script>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </html>

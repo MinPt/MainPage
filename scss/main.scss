@@ -1,32 +1,29 @@
-@import 'blocks/_header.scss';
-@import 'blocks/_main.scss';
-@import 'blocks/_list.scss';
-@import 'blocks/_overlay.scss';
-@import 'blocks/_logo.scss';
-@import 'blocks/_nav.scss';
-@import 'blocks/_carousel.scss';
-@import 'blocks/_footer.scss';
-@import 'blocks/_card.scss';
-@import 'grid/_desktop.scss';
-@import 'grid/_phone.scss';
-@import 'blocks/_btn.scss';
-@import 'blocks/_map.scss';
-@import 'blocks/_icon.scss';
-@import 'blocks/_contact.scss';
-@import 'blocks/_form.scss';
-@import 'blocks/_pop-up.scss';
-@import 'helpers/_generic-classes.scss';
-*{
+@import "blocks/_header.scss";
+@import "blocks/_main.scss";
+@import "blocks/_list.scss";
+@import "blocks/_overlay.scss";
+@import "blocks/_logo.scss";
+@import "blocks/_nav.scss";
+@import "blocks/_carousel.scss";
+@import "blocks/_footer.scss";
+@import "blocks/_card.scss";
+@import "grid/_desktop.scss";
+@import "grid/_phone.scss";
+@import "blocks/_btn.scss";
+@import "blocks/_map.scss";
+@import "blocks/_icon.scss";
+@import "blocks/_contact.scss";
+@import "blocks/_form.scss";
+@import "blocks/_pop-up.scss";
+@import "helpers/_generic-classes.scss";
+* {
   box-sizing: border-box;
   font-family: "Roboto";
-
 }
 
-body{
+body {
   padding: 0;
   margin: 0;
   background-color: $main-color;
-  
+  justify-content: center;
 }
-
-
